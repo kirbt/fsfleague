@@ -26,7 +26,7 @@ export default function RootLayout({
             <div className="container mx-auto px-8 py-6">
               <div className="flex items-center justify-between">
                 <h1 className="text-3xl font-bold text-yellow-300">
-                  FSF LEAGUE
+                  FSFLEAGUE
                 </h1>
 
                 <nav className="hidden md:flex space-x-8">
@@ -54,8 +54,10 @@ export default function RootLayout({
           </div>
         </header>
 
-        <main className="relative z-10 pt-24 bg-gradient-to-b from-black via-gray-950 to-black min-h-screen">
-          {children}
+        <main className="relative z-10 pt-24 bg-gradient-to-b from-black via-gray-950 to-black min-h-screen min-w-screen">
+          <div className="bg-gray-900/40 min-h-screen m-0">
+            {children}
+          </div>
         </main>
       </body>
     </html>
