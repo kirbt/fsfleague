@@ -9,7 +9,7 @@ headers = {
     "Content-Type": "application/json"
 }
 
-def getPositionLeaderboard(season, position):
+def get_position_leaderboard(season, position):
 
   # prepare api fetch
   url = f'{SUPABASE_URL}/rest/v1/rpc/ovr_leaderboard_by_position'
@@ -28,7 +28,7 @@ def getPositionLeaderboard(season, position):
     return {"error: ": f"database call failed: {response.text}"}
 
 
-def getCategoricalLeaderboard(season, category):
+def get_category_leaderboard(season, category):
 
   # prepare fetch
   url = f'{SUPABASE_URL}/rest/v1/rpc/ovr_leaderboard_by_category'
